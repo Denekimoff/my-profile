@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;600&family=Raleway:ital,wght@0,400;0,700;1,300;1,500;1,700&display=swap');
+
+:root {
+  --header-background-color: rgba(67, 27, 12, 0.75);
+  --header-text-color: #fff;
+  --main-font-family: Manrope;
+  --main-font-size: 16px;
+  --main-background-color: rgba(0, 0, 0, 0.1);
+  --main-body-border: 1px solid rgba(0, 0, 0, 0.3);
+  --footer-font-size: 12px;
+  --title-font-family: Raleway;
+  --title-font-style: italic;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  list-style-type: none;
+}
+
+html {
+  font-family: var(--main-font-family, Manrope);
+  font-size: var(--main-font-size, 16px);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background-color: var(--header-background-color, rgba(67, 27, 12, 0.75));
+}
+
+.wrapper {
+  max-width: 75rem;
+  margin: 0 auto;
+  padding: 0 1rem 0;
+}
+
+.header__body {
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.header__logo img{
+  /* padding: 0.5rem; */
+  width: 3rem;
+  height: 3rem;
+}
+
+.header__burger {}
+
+.header__menu {}
+
+.header__list {
+  display: flex;
+  flex-direction: row;
+}
+
+.header__item {
+  padding: 0.5rem;
+}
+
+.header__item a{
+  color: var(--header-text-color, #fff);
+}
+
+.main {
+background-color: var(--main-background-color, rgba(0, 0, 0, 0.1));
+}
+
+.main__body {
+  padding: 1rem 0.5rem;
+  border-left: var(--main-body-border, 1px solid rgba(0, 0, 0, 0.3));
+  border-right: var(--main-body-border, 1px solid rgba(0, 0, 0, 0.3));
+}
+
+.main__body h1 {
+  padding: 1rem;
+  text-align: center;
+  font-family: var(--title-font-family, Raleway);
+  font-style: var(--title-font-style, italic);
+}
+
+.main__about {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.about__photo {
+  padding-top: 1rem;
+  width: 50%;
+  margin: 0 auto;
+  display: contents;
+}
+
+.about__photo img{
+  width: 20rem;
+  height: 22rem;
+}
+
+.about__info {
+  padding-top: 1rem;
+  width: 50%;
+}
+
+.about__info p {
+  text-align: center;
+}
+
+.main__summary {
+  text-align: center;
+}
+
+.main__title {
+  padding: 1rem;
+  font-family: var(--title-font-family, Raleway);
+  font-style: var(--title-font-style, italic);
+}
+
+.main__skills {
+  text-align: center;
+}
+
+.skills__list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.skills__item {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+}
+
+.main__links {
+  text-align: center;
+}
+
+.links__item {
+  font-style: italic;
+}
+.links__item a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main__education {
+  text-align: center;
+}
+
+.footer {
+  padding: 1rem 0;
+  background-color: var(--header-background-color, rgba(67, 27, 12, 0.75));
+  color: var(--header-text-color, #fff);
+  font-size: var(--footer-font-size, 12px);
+}

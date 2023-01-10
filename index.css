@@ -1,0 +1,234 @@
+/*! Prikol */
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300&family=Open+Sans&family=Roboto:wght@300&display=swap");
+.image-hover-container {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.image-hover-container h1{
+  color: rgba(0, 0, 0, 0.08);
+  user-select: none;
+}
+
+.image-hover-container .container {
+  position: relative;
+  height: 20rem;
+  width: 15rem;
+  margin: auto;
+  cursor: pointer;
+  display: -webkit-box;
+}
+
+.image-hover-container .container:hover>.bottom-right {
+  top: 55%;
+  left: 80%;
+  box-shadow: 0px 37px 29px rgba(0, 0, 0, 0.2);
+  width: 350px;
+}
+
+.image-hover-container .container:hover>.middle {
+  height: 90%;
+  left: 5%;
+  top: 5%;
+  width: 90%;
+  box-shadow: 0px 23px 33px rgba(0, 0, 0, 0.2);
+}
+
+.image-hover-container .container:hover>.middle .overlay {
+  opacity: 1;
+  z-index: 1;
+}
+
+.image-hover-container .container:hover>.middle .overlay p:nth-child(1) {
+  padding-top: 0;
+}
+
+.image-hover-container .container:hover>.top-left {
+  left: -70px;
+  top: -90px;
+  width: 150px;
+  box-shadow: 0px 37px 29px rgba(0, 0, 0, 0.2);
+}
+
+.image-hover-container .container:hover>.top-right {
+  left: 250px;
+  top: -90px;
+  width: 260px;
+  height: 280px;
+  box-shadow: 0px 37px 29px rgba(0, 0, 0, 0.2);
+}
+
+.image-hover-container .container:hover>.bottom-left {
+  left: -89%;
+  top: 65%;
+  width: 360px;
+  box-shadow: 0px 37px 29px rgba(0, 0, 0, 0.2);
+}
+
+.image-hover-container .container .lake-district {
+  background: white no-repeat cover;
+}
+
+.image-hover-container .container .bg-image {
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 10% 10%;
+}
+
+.image-hover-container .container .middle {
+  transition: 500ms all;
+  transition-delay: 0.25s;
+  transition-timing-function: cubic-bezier(0.17, 0.67, 0.33, 0.97);
+  position: relative;
+  margin: auto;
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  left: 0;
+  top: 0;
+  box-shadow: 0px 17px 23px rgba(0, 0, 0, 0.2);
+}
+
+.image-hover-container .container .middle .bg-image {
+  height: 100%;
+  width: 100%;
+}
+
+.image-hover-container .container .middle .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 9;
+  background: rgba(67, 27, 12, 0.75);
+  display: flex;
+  flex-direction: column;
+  transition: 300ms all;
+  transition-delay: 0.37s;
+  opacity: 0;
+  text-decoration: none;
+  z-index: -1;
+}
+
+.image-hover-container .container .middle .overlay p {
+  position: relative;
+  margin: auto;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.1em;
+  opacity: 0.8;
+}
+
+.image-hover-container .container .middle .overlay p:nth-child(1) {
+  margin-bottom: 4px;
+  padding-top: 30px;
+  transition: all 400ms;
+  transition-delay: 0.3s;
+}
+
+.image-hover-container .container .middle .overlay p:nth-child(2) {
+  margin-top: 4px;
+}
+
+.image-hover-container .container .bottom-right {
+  transition: 800ms all;
+  transition-delay: 0.15s;
+  transition-timing-function: cubic-bezier(0.17, 0.67, 0.33, 0.97);
+  position: absolute;
+  left: 0%;
+  top: 48%;
+  width: 100%;
+  box-shadow: 0px 30px 25px rgba(110, 110, 110, 0);
+  z-index: 1;
+}
+
+.image-hover-container .container .bottom-right .bg-image {
+  height: 220px;
+  width: 100%;
+}
+
+.image-hover-container .container .bottom-left {
+  transition: 800ms all;
+  transition-delay: 0.17s;
+  transition-timing-function: cubic-bezier(0.17, 0.67, 0.33, 0.97);
+  position: absolute;
+  left: 0%;
+  top: 48%;
+  width: 100%;
+  z-index: 1;
+}
+
+.image-hover-container .container .bottom-left .bg-image {
+  height: 220px;
+  width: 100%;
+}
+
+.image-hover-container .container .top-left {
+  transition-timing-function: cubic-bezier(0.17, 0.67, 0.33, 0.97);
+  transition: 600ms all;
+  transition-delay: 0.19s;
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  width: 150px;
+  z-index: 1;
+}
+
+.image-hover-container .container .top-left .bg-image {
+  height: 220px;
+  width: 100%;
+}
+
+.image-hover-container .container .top-right {
+  transition: 500ms all;
+  transition-delay: 0.08s;
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  width: 300px;
+  height: 260px;
+  z-index: 1;
+  transition-timing-function: cubic-bezier(0.17, 0.67, 0.33, 0.97);
+}
+
+.image-hover-container .container .top-right .bg-image {
+  float: right;
+  height: 100%;
+  width: 100%;
+}
+
+@media (max-width: 920px) {
+  .image-hover-container {
+    transform: scale(0.8) translateX(0px);
+    overflow: hidden;
+  }
+
+  .image-hover-container .overlay p:nth-child(1) {
+    margin-top: 125px;
+  }
+
+  .image-hover-container .overlay p:nth-child(2) {
+    margin-bottom: 30px;
+  }
+
+  .image-hover-container .bottom-right,
+  .image-hover-container .bottom-left,
+  .image-hover-container .top-left,
+  .image-hover-container .top-right {
+    box-shadow: 0px 0px 0px important!;
+  }
+}
+
+@media (max-width: 350px) {
+
+  .bottom-right,
+  .bottom-left,
+  .top-left,
+  .top-right {
+    display: none;
+  }
+}
