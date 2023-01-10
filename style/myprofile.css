@@ -8,7 +8,7 @@
   --main-background-color: rgba(0, 0, 0, 0.1);
   --main-body-border: 1px solid rgba(0, 0, 0, 0.3);
   --footer-font-size: 12px;
-  --title-font-family: Raleway;
+  --title-font-family: Manrope;
   --title-font-style: italic;
 }
 
@@ -29,9 +29,12 @@ html {
 body {
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .header {
+  position: fixed;
+  width: 100%;
   background-color: var(--header-background-color, rgba(67, 27, 12, 0.75));
 }
 
@@ -42,6 +45,7 @@ body {
 }
 
 .header__body {
+  position: relative;
   padding: 0.5rem;
   display: flex;
   align-items: center;
@@ -49,13 +53,14 @@ body {
 }
 
 .header__logo {
+  position: absolute;
   display: flex;
   align-items: center;
   justify-content: flex-start;
 }
 
 .header__logo img{
-  /* padding: 0.5rem; */
+  padding: 0.3rem;
   width: 3rem;
   height: 3rem;
 }
@@ -73,18 +78,30 @@ body {
   padding: 0.5rem;
 }
 
-.header__item a{
+.header__item a {
   color: var(--header-text-color, #fff);
+  transition: .3s;
+}
+
+.header__item a:hover {
+  color: var(--header-text-color-hover, rgba(255, 255, 255, .7))
+}
+
+.header__item a:active {
+  color: var(--header-text-color, #fff)
 }
 
 .main {
 background-color: var(--main-background-color, rgba(0, 0, 0, 0.1));
 }
 
+section {
+  padding-top: 1rem;
+}
+
 .main__body {
+  margin-top: 2rem;
   padding: 1rem 0.5rem;
-  border-left: var(--main-body-border, 1px solid rgba(0, 0, 0, 0.3));
-  border-right: var(--main-body-border, 1px solid rgba(0, 0, 0, 0.3));
 }
 
 .main__body h1 {
@@ -109,7 +126,9 @@ background-color: var(--main-background-color, rgba(0, 0, 0, 0.1));
 
 .about__photo img{
   width: 20rem;
-  height: 22rem;
+  height: 20rem;
+  border: 1px solid rgba(0, 0, 0, .2);
+  border-radius: 50%;
 }
 
 .about__info {
@@ -118,7 +137,11 @@ background-color: var(--main-background-color, rgba(0, 0, 0, 0.1));
 }
 
 .about__info p {
-  text-align: center;
+  text-align: left;
+}
+
+.about__info p span {
+  color: rgba(0, 0, 0, .4);
 }
 
 .main__summary {

@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300&family=Open+Sans&family=Roboto:wght@300&display=swap");
+
+html {
+  font-family: Manrope;
+}
+
 .image-hover-container {
   position: relative;
   height: 100vh;
@@ -7,8 +12,9 @@
   flex-direction: column;
   text-align: center;
 }
+
 .image-hover-container h1{
-  color: rgba(0, 0, 0, 0.08);
+  color: rgba(0, 0, 0, .1);
   user-select: none;
 }
 
@@ -24,8 +30,8 @@
 .image-hover-container .container:hover>.bottom-right {
   top: 55%;
   left: 80%;
-  box-shadow: 0px 37px 29px rgba(0, 0, 0, 0.2);
-  width: 350px;
+  box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.2);
+  width: 21rem;
 }
 
 .image-hover-container .container:hover>.middle {
@@ -33,7 +39,7 @@
   left: 5%;
   top: 5%;
   width: 90%;
-  box-shadow: 0px 23px 33px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, .2);
 }
 
 .image-hover-container .container:hover>.middle .overlay {
@@ -46,25 +52,25 @@
 }
 
 .image-hover-container .container:hover>.top-left {
-  left: -70px;
-  top: -90px;
-  width: 150px;
-  box-shadow: 0px 37px 29px rgba(0, 0, 0, 0.2);
+  left: -4rem;
+  top: -6rem;
+  width: 10rem;
+  box-shadow: 0 1.2rem .8rem rgba(0, 0, 0, .2);
 }
 
 .image-hover-container .container:hover>.top-right {
-  left: 250px;
-  top: -90px;
-  width: 260px;
-  height: 280px;
-  box-shadow: 0px 37px 29px rgba(0, 0, 0, 0.2);
+  left: 15rem;
+  top: -6rem;
+  width: 16rem;
+  height: 17rem;
+  box-shadow: 0 1.2rem 0.8rem rgba(0, 0, 0, .2);
 }
 
 .image-hover-container .container:hover>.bottom-left {
-  left: -89%;
+  left: -90%;
   top: 65%;
-  width: 360px;
-  box-shadow: 0px 37px 29px rgba(0, 0, 0, 0.2);
+  width: 22rem;
+  box-shadow: 0 1.2rem .8rem rgba(0, 0, 0, .2);
 }
 
 .image-hover-container .container .lake-district {
@@ -79,16 +85,16 @@
 
 .image-hover-container .container .middle {
   transition: 500ms all;
-  transition-delay: 0.25s;
-  transition-timing-function: cubic-bezier(0.17, 0.67, 0.33, 0.97);
+  transition-delay: .3s;
+  transition-timing-function: cubic-bezier(.17, .67, .33, .97);
   position: relative;
   margin: auto;
   height: 100%;
   width: 100%;
-  margin: 0px;
+  margin: 0;
   left: 0;
   top: 0;
-  box-shadow: 0px 17px 23px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, .2);
 }
 
 .image-hover-container .container .middle .bg-image {
@@ -107,7 +113,7 @@
   display: flex;
   flex-direction: column;
   transition: 300ms all;
-  transition-delay: 0.37s;
+  transition-delay: .4s;
   opacity: 0;
   text-decoration: none;
   z-index: -1;
@@ -119,41 +125,41 @@
   color: #fff;
   font-family: "Roboto", sans-serif;
   font-size: 1.1em;
-  opacity: 0.8;
+  opacity: .8;
 }
 
 .image-hover-container .container .middle .overlay p:nth-child(1) {
-  margin-bottom: 4px;
-  padding-top: 30px;
+  margin-bottom: .4rem;
+  padding-top: 2rem;
   transition: all 400ms;
-  transition-delay: 0.3s;
+  transition-delay: .3s;
 }
 
 .image-hover-container .container .middle .overlay p:nth-child(2) {
-  margin-top: 4px;
+  margin-top: .4rem;
 }
 
 .image-hover-container .container .bottom-right {
   transition: 800ms all;
-  transition-delay: 0.15s;
-  transition-timing-function: cubic-bezier(0.17, 0.67, 0.33, 0.97);
+  transition-delay: .15s;
+  transition-timing-function: cubic-bezier(.17, .67, .33, .97);
   position: absolute;
   left: 0%;
   top: 48%;
   width: 100%;
-  box-shadow: 0px 30px 25px rgba(110, 110, 110, 0);
+  box-shadow: 0px 2rem 1.5rem rgba(110, 110, 110, 0);
   z-index: 1;
 }
 
 .image-hover-container .container .bottom-right .bg-image {
-  height: 220px;
+  height: 14rem;
   width: 100%;
 }
 
 .image-hover-container .container .bottom-left {
   transition: 800ms all;
-  transition-delay: 0.17s;
-  transition-timing-function: cubic-bezier(0.17, 0.67, 0.33, 0.97);
+  transition-delay: .17s;
+  transition-timing-function: cubic-bezier(.17, .67, .33, .97);
   position: absolute;
   left: 0%;
   top: 48%;
@@ -162,36 +168,36 @@
 }
 
 .image-hover-container .container .bottom-left .bg-image {
-  height: 220px;
+  height: 14rem;
   width: 100%;
 }
 
 .image-hover-container .container .top-left {
-  transition-timing-function: cubic-bezier(0.17, 0.67, 0.33, 0.97);
+  transition-timing-function: cubic-bezier(.17, .67, .33, .97);
   transition: 600ms all;
-  transition-delay: 0.19s;
+  transition-delay: .19s;
   position: absolute;
   left: 0%;
   top: 0%;
-  width: 150px;
+  width: 10rem;
   z-index: 1;
 }
 
 .image-hover-container .container .top-left .bg-image {
-  height: 220px;
+  height: 14rem;
   width: 100%;
 }
 
 .image-hover-container .container .top-right {
   transition: 500ms all;
-  transition-delay: 0.08s;
+  transition-delay: .08s;
   position: absolute;
   left: 0%;
   top: 0%;
-  width: 300px;
-  height: 260px;
+  width: 19rem;
+  height: 15rem;
   z-index: 1;
-  transition-timing-function: cubic-bezier(0.17, 0.67, 0.33, 0.97);
+  transition-timing-function: cubic-bezier(.17, .67, .33, .97);
 }
 
 .image-hover-container .container .top-right .bg-image {
@@ -202,23 +208,23 @@
 
 @media (max-width: 920px) {
   .image-hover-container {
-    transform: scale(0.8) translateX(0px);
+    transform: scale(.8) translateX(0px);
     overflow: hidden;
   }
 
   .image-hover-container .overlay p:nth-child(1) {
-    margin-top: 125px;
+    margin-top: 8rem;
   }
 
   .image-hover-container .overlay p:nth-child(2) {
-    margin-bottom: 30px;
+    margin-bottom: 2rem;
   }
 
   .image-hover-container .bottom-right,
   .image-hover-container .bottom-left,
   .image-hover-container .top-left,
   .image-hover-container .top-right {
-    box-shadow: 0px 0px 0px important!;
+    box-shadow: 0 0 0 important!;
   }
 }
 
