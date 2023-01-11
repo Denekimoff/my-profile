@@ -79,18 +79,16 @@ body {
 
 .header__item {
   padding: 0.5rem;
-}
-
-.header__item a {
   color: var(--header-text-color, #fff);
   transition: .3s;
+  cursor: pointer;
 }
 
-.header__item a:hover {
+.header__item:hover {
   color: var(--header-text-color-hover, rgba(255, 255, 255, .7))
 }
 
-.header__item a:active {
+.header__item:active {
   color: var(--header-text-color, #fff)
 }
 
@@ -146,7 +144,6 @@ section:last-child {
 }
 
 .about__info p {
-  position: relative;
   margin-bottom: 0.5rem;
   text-align: left;
 }
@@ -251,9 +248,11 @@ section:last-child {
     background-color: var(--header-background-color);
     z-index: 100;
   }
+
   .header__menu .header__list {
     flex-direction: column;
   }
+
   .header__menu .header__list .header__item {
     padding: 1.5rem;
   }
@@ -261,7 +260,6 @@ section:last-child {
   .header__menu--visible {
     transform: none;
   }
-
 
   .header__burger {
     display: block;
