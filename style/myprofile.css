@@ -113,10 +113,9 @@ section:last-child {
   padding: 1rem 0.5rem;
 }
 
-.main__body h1 {
+.main__body h2 {
   padding: 1rem;
   text-align: center;
-  font-size: 42px;
   font-family: var(--title-font-family, Raleway);
   font-style: var(--title-font-style, italic);
 }
@@ -143,7 +142,7 @@ section:last-child {
 
 .about__info {
   padding: 1rem 0 0 1rem;
-  width: 50%;
+  width: 55%;
 }
 
 .about__info p {
@@ -238,8 +237,9 @@ section:last-child {
 
   .header__menu {
     position: absolute;
-    top: 3rem;
-    width: 50%;
+    top: 4rem;
+    right: 0;
+    width: 52%;
     height: fit-content;
     transform: translateX(150%);
     transition: transform .5s;
