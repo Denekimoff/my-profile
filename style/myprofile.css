@@ -8,8 +8,8 @@
   --main-background-color: rgba(0, 0, 0, 0.1);
   --main-body-border: 1px solid rgba(0, 0, 0, 0.3);
   --footer-font-size: 12px;
-  --title-font-family: Manrope;
-  --title-font-style: italic;
+  --title-font-family: Raleway;
+  --title-font-style: normal;
 }
 
 *{
@@ -22,6 +22,7 @@
 }
 
 html {
+  scroll-behavior: smooth;
   font-family: var(--main-font-family, Manrope);
   font-size: var(--main-font-size, 16px);
 }
@@ -35,6 +36,7 @@ body {
 .header {
   position: fixed;
   width: 100%;
+  height: 4rem;
   background-color: var(--header-background-color, rgba(67, 27, 12, 0.75));
 }
 
@@ -45,7 +47,7 @@ body {
 }
 
 .header__body {
-  position: relative;
+  width: 100%;
   padding: 0.5rem;
   display: flex;
   align-items: center;
@@ -53,7 +55,6 @@ body {
 }
 
 .header__logo {
-  position: absolute;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -65,9 +66,11 @@ body {
   height: 3rem;
 }
 
-.header__burger {}
-
 .header__menu {}
+
+.header__burger {
+  display: none;
+}
 
 .header__list {
   display: flex;
@@ -97,16 +100,23 @@ background-color: var(--main-background-color, rgba(0, 0, 0, 0.1));
 
 section {
   padding-top: 1rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid rgba(0, 0, 0, .1);
+}
+
+section:last-child {
+  border: none;
 }
 
 .main__body {
-  margin-top: 2rem;
+  margin-top: 3rem;
   padding: 1rem 0.5rem;
 }
 
 .main__body h1 {
   padding: 1rem;
   text-align: center;
+  font-size: 42px;
   font-family: var(--title-font-family, Raleway);
   font-style: var(--title-font-style, italic);
 }
@@ -132,11 +142,13 @@ section {
 }
 
 .about__info {
-  padding-top: 1rem;
+  padding: 1rem 0 0 1rem;
   width: 50%;
 }
 
 .about__info p {
+  position: relative;
+  margin-bottom: 0.5rem;
   text-align: left;
 }
 
@@ -144,9 +156,15 @@ section {
   color: rgba(0, 0, 0, .4);
 }
 
+
 .main__summary {
   text-align: center;
 }
+
+.main__summary p:last-child {
+  margin-top: 0.5rem;
+}
+
 
 .main__title {
   padding: 1rem;
@@ -190,9 +208,112 @@ section {
   text-align: center;
 }
 
+.education__list {}
+
+.education__item {
+  margin-bottom: 1rem;
+}
+
+.education__item p:nth-child(odd) {
+  font-weight: bold;
+}
+
+.education__item p span {
+  color: rgba(0, 0, 0, .3);
+}
+
 .footer {
   padding: 1rem 0;
+  text-align: center;
   background-color: var(--header-background-color, rgba(67, 27, 12, 0.75));
   color: var(--header-text-color, #fff);
   font-size: var(--footer-font-size, 12px);
+}
+
+/* MEDIA QUERY MOBILE */
+@media (max-width: 780px) {
+  .wrapper {
+    width: 100%;
+  }
+
+  .header__menu {
+    position: absolute;
+    top: 3rem;
+    width: 50%;
+    height: fit-content;
+    transform: translateX(150%);
+    transition: transform .5s;
+    overflow-y: auto;
+    background-color: var(--header-background-color);
+    z-index: 100;
+  }
+  .header__menu .header__list {
+    flex-direction: column;
+  }
+  .header__menu .header__list .header__item {
+    padding: 1.5rem;
+  }
+
+  .header__menu--visible {
+    transform: none;
+  }
+
+
+  .header__burger {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    background-color: transparent;
+    width: 1.5rem;
+    height: 1rem;
+  }
+
+  .header__burger span {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  .header__burger::after,
+  .header__burger::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    transition: transform .3s ease-in-out, bottom .3s ease-in-out, top .3s ease-in-out;
+  }
+
+  .header__burger::after {
+    bottom: 0;
+  }
+
+  .header__burger::before {
+    top: 0;
+  }
+
+  .header__burger--active span {
+    opacity: 0;
+  }
+
+  .header__burger--active::after {
+    bottom: auto;
+    transform: rotate(-45deg);
+    top: 50%;
+  }
+
+  .header__burger--active::before {
+    transform: rotate(45deg);
+    top: 50%;
+  }
+
+  .stop-scroll {
+    overflow: hidden;
+  }
 }
