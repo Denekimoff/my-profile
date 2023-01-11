@@ -151,6 +151,10 @@ section:last-child {
   text-align: left;
 }
 
+.about__info p a {
+  color: rgb(48, 19, 5);
+}
+
 .about__info p span {
   color: rgba(0, 0, 0, .4);
 }
