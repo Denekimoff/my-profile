@@ -24,15 +24,17 @@ const handleClickBurger = () => {
 }
 
 const handleClickOnMenuLinks = event => {
-  const prop = event.target.innerHTML
+  if (event.target.tagName == 'LI') {
+    const prop = event.target.innerHTML
 
-  document.body.classList.remove('stop-scroll')
-  burgerElement.classList.toggle('header__burger--active')
-  menuElement.classList.toggle('header__menu--visible')
+    document.body.classList.remove('stop-scroll')
+    burgerElement.classList.toggle('header__burger--active')
+    menuElement.classList.toggle('header__menu--visible')
 
-  if (linksObject[prop]?.tagName == 'SECTION') {
-    linksObject[prop].scrollIntoView({ block: 'center', behavior: 'smooth' })
-  }
+    if (linksObject[prop]?.tagName == 'SECTION') {
+      linksObject[prop].scrollIntoView({ block: 'center', behavior: 'smooth' })
+    }
+  } else return
 }
 
 const handleClickOuterMenu = event => {
@@ -44,8 +46,6 @@ const handleClickOuterMenu = event => {
   menuElement.classList.toggle('header__menu--visible')
 }
 
-menuLinksCollection.forEach(link =>
-  link.addEventListener('click', handleClickOnMenuLinks)
-)
+menuElement.addEventListener('click', handleClickOnMenuLinks)
 burgerElement.addEventListener('click', handleClickBurger)
 document.body.addEventListener('click', handleClickOuterMenu)
