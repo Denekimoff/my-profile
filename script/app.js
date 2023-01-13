@@ -41,6 +41,7 @@ const handleClickOuterMenu = event => {
   if (burgerElement.contains(event.target)) return
   if (!menuElement.classList.contains('header__menu--visible')) return
   if (menuElement.contains(event.target)) return
+
   document.body.classList.remove('stop-scroll')
   burgerElement.classList.toggle('header__burger--active')
   menuElement.classList.toggle('header__menu--visible')
