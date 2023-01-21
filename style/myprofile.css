@@ -252,6 +252,9 @@ section:last-child {
     width: 100%;
   }
 
+  .header {
+    z-index: 1000;
+  }
   .header__menu {
     position: absolute;
     top: 4rem;
@@ -262,7 +265,6 @@ section:last-child {
     transition: transform .5s;
     overflow-y: auto;
     background-color: var(--header-background-color);
-    z-index: 100;
   }
 
   .header__menu .header__list {
