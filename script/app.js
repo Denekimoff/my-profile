@@ -4,17 +4,25 @@ const menuElement = document.querySelector('.header__menu')
 const menuLinksCollection = document.querySelectorAll('.header__item')
 
 const aboutSectionElement = document.querySelector('.main__about')
-const summarySectionElement = document.querySelector('.main__summary')
+const profileSectionElement = document.querySelector('.main__profile')
 const skillsSectionElement = document.querySelector('.main__skills')
 const linksSectionElement = document.querySelector('.main__links')
 const educationSectionElement = document.querySelector('.main__education')
+const expirienceSectionElement = document.querySelector('.main__expirience')
+const coursesSectionElement = document.querySelector('.main__courses')
+const languageSectionElement = document.querySelector('.main__language')
+const hobbiesSectionElement = document.querySelector('.main__hobbies')
 
 const linksObject = {
   Main: aboutSectionElement,
-  Summary: summarySectionElement,
+  Profile: profileSectionElement,
   Skills: skillsSectionElement,
-  Links: linksSectionElement,
+  Expirience: expirienceSectionElement,
   Education: educationSectionElement,
+  Courses: coursesSectionElement,
+  Language: languageSectionElement,
+  Hobbies: hobbiesSectionElement,
+  Links: linksSectionElement,
 }
 
 const handleClickBurger = () => {

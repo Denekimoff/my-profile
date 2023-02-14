@@ -46,6 +46,11 @@ body {
   padding: 0 1rem 0;
 }
 
+.section__wrapper {
+  margin: 0 auto;
+  max-width: 70%;
+}
+
 .header__body {
   width: 100%;
   padding: 0.5rem;
@@ -98,6 +103,7 @@ section {
   padding-top: 1rem;
   padding-bottom: 2rem;
   border-bottom: 1px solid rgba(0, 0, 0, .1);
+  text-align: center;
 }
 
 section:last-child {
@@ -150,17 +156,15 @@ section:last-child {
 .about__info p a {
   color: rgb(48, 19, 5);
 }
+.about__info p a:hover {
+  color: blue;
+}
 
 .about__info p span {
   color: rgba(0, 0, 0, .4);
 }
 
-
-.main__summary {
-  text-align: center;
-}
-
-.main__summary p:last-child {
+.main__profile p {
   margin-top: 0.5rem;
 }
 
@@ -169,10 +173,6 @@ section:last-child {
   padding: 1rem;
   font-family: var(--title-font-family, Raleway);
   font-style: var(--title-font-style, italic);
-}
-
-.main__skills {
-  text-align: center;
 }
 
 .skills__list {
@@ -187,10 +187,6 @@ section:last-child {
   flex-direction: column-reverse;
   justify-content: center;
   align-items: center;
-}
-
-.main__links {
-  text-align: center;
 }
 
 .links__list {
@@ -222,8 +218,9 @@ section:last-child {
   color: rgba(0, 0, 0);
 }
 
-.main__education {
-  text-align: center;
+.expirience__achievements>li {
+  list-style-type: disc;
+  text-align: left;
 }
 
 .education__item {
@@ -235,7 +232,15 @@ section:last-child {
 }
 
 .education__item p span {
+  padding-left: .5rem;
   color: rgba(0, 0, 0, .3);
+}
+
+.main__language .education__list {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .footer {
