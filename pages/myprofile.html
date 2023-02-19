@@ -5,12 +5,12 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="../assets/img/favico.svg" type="image/x-icon">
+  <link rel="shortcut icon" href="../assets/img/user_icon.ico" type="image/x-icon">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
   <link rel="stylesheet" href="../style/myprofile.css">
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js" defer></script>
   <script src="../script/app.js" defer></script>
-  <title>Profile</title>
+  <title>Резюме</title>
 </head>
 
 <body>
@@ -22,15 +22,15 @@
         </div>
         <nav class="header__menu">
           <ul class="header__list">
-            <li class="header__item">Main</li>
-            <li class="header__item">Profile</li>
-            <li class="header__item">Skills</li>
-            <li class="header__item">Expirience</li>
-            <li class="header__item">Education</li>
-            <li class="header__item">Courses</li>
-            <li class="header__item">Language</li>
-            <li class="header__item">Hobbies</li>
-            <li class="header__item">Links</li>
+            <li class="header__item">Главная</li>
+            <li class="header__item">Опыт работы</li>
+            <li class="header__item">Курсы</li>
+            <li class="header__item">Образование</li>
+            <li class="header__item">Hard Skills</li>
+            <li class="header__item">Языки</li>
+            <li class="header__item">О себе</li>
+            <li class="header__item">Хобби</li>
+            <li class="header__item">QR-коды</li>
           </ul>
         </nav>
         <div class="header__burger">
@@ -42,69 +42,173 @@
   <main class="main">
     <div class="wrapper">
       <div class="main__body">
-        <h2>Short info</h2>
+        <h2>Резюме</h2>
         <section class="main__about">
           <div class="about__photo">
             <img src="../assets/img/avatar.jpg" alt="photo">
           </div>
           <div class="about__info">
-            <p class="about__fullname">
-              <span> Full Name:</span>
-              Ekimov Denis Andreevich
-            </p>
+            <h3 class="about__fullname">
+              Ekimov Denis (Frontend Developer)
+            </h3>
             <p class="about__email">
               <span> Gmail: </span>
               <a href="mailto:ekimoffdenis@gmail.com?subject=Job offer">ekimoffdenis@gmail.com</a>
+            </p>
+            <p class="about__email">
+              <span> LinkedIn: </span>
+              <a href="https://www.linkedin.com/in/ekimovdenis"
+                target="_blank">linkedin.com/in/ekimovdenis</a>
+            </p>
+            <p class="about__email">
+              <span> GitHub: </span>
+              <a href="https://github.com/Denekimoff" target="_blank">github.com/Denekimoff</a>
             </p>
             <p class="about__telegram">
               <span> Telegram:</span>
               <a href="https://t.me/DenisEkimoff" target="_blank"
                 rel="noopener noreferrer">@DenisEkimoff</a>
-              <span> - Preferred connection</span>
+              <span> - Предпочтительная связь</span>
             </p>
             <p class="about__tel">
-              <span> Tel: </span>
+              <span> Моб. телефон: </span>
               <a href="tel:+375298734927">+375 (29) 873-49-27</a>
             </p>
             <p class="about__location">
-              <span> Location:</span>
-              Minsk, Belarus
+              <span> Местоположение:</span>
+              <a href="https://president.gov.by/ru/belarus/regions/minsk" target="_blank"
+                rel="noopener noreferrer">Минск, Республика Беларусь</a>
             </p>
             <p class="about__tel">
-              <span> Download this resume: </span>
-              <a href="https://drive.google.com/file/d/1qYl6QKa0St5y-ko8pPvTC9QuLvTSEpIA/view?usp=sharing"
+              <span> Скачать резюме: </span>
+              <a href="https://drive.google.com/file/d/1z75N86Kxi-7b1GWs7B-rFkdpN_ocYlxK/view?usp=share_link"
                 target="_blank">File.pdf</a>
             </p>
           </div>
         </section>
-        <section class="main__profile">
+        <section class="main__expirience">
           <div class="section__wrapper">
-            <h3 class="main__title">Profile</h3>
-            <p>Skillful Web Developer adept in all stages of advanced web development. Knowledgeable
-              in user interface and debugging processes. Equipped with a diverse and promising
-              skill-set. Proficient in an assortment of technologies, including JavaScript,
-              TypeScript, ReactJS, Redux, Git, npm/yarn, Figma, Sass, Vite, Webpack, NodeJS, ESLint,
-              Bootstrap, etc. Able to effectively self-manage during independent projects, as well
-              as
-              collaborate in a team setting.
-            </p>
-            <p>Have projects such as landing pages, calculator for tips in cafe and restaurants,
-              online-store Pizzas and online-store Books, news blog, mini-game.</p>
-            <p>To get acquainted with the projects, you can go to the my account &#8594
-              <a href="https://github.com/Denekimoff">
-                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="13"
-                  viewBox="-0.122 175.062 480.244 129.875">
-                  <g fill="#121110">
-                    <path
-                      d="M92.375 230.65H52.019a1.887 1.887 0 0 0-1.886 1.886v19.731a1.89 1.89 0 0 0 1.886 1.889h15.743v24.513s-3.535 1.206-13.308 1.206c-11.53 0-27.637-4.214-27.637-39.632 0-35.425 16.772-40.087 32.518-40.087 13.63 0 19.502 2.401 23.238 3.556 1.174.36 2.26-.808 2.26-1.851l4.502-19.063c0-.487-.165-1.075-.721-1.474-1.517-1.082-10.774-6.262-34.16-6.262-26.941 0-54.576 11.463-54.576 66.562 0 55.103 31.64 63.313 58.302 63.313 22.076 0 35.468-9.434 35.468-9.434.552-.306.612-1.077.612-1.431v-61.537c0-1.04-.844-1.885-1.885-1.885M300.354 181.664a1.88 1.88 0 0 0-1.873-1.896h-22.724a1.889 1.889 0 0 0-1.882 1.896l.006 43.913h-35.419v-43.913a1.882 1.882 0 0 0-1.875-1.896h-22.722a1.887 1.887 0 0 0-1.877 1.896v118.904c0 1.048.843 1.901 1.877 1.901h22.722c1.039 0 1.875-.854 1.875-1.901v-50.86h35.419l-.062 50.86c0 1.048.844 1.901 1.883 1.901h22.777c1.041 0 1.873-.854 1.875-1.901V181.664M135.254 197.268c0-8.183-6.56-14.795-14.653-14.795-8.085 0-14.65 6.612-14.65 14.795 0 8.173 6.565 14.802 14.65 14.802 8.093 0 14.653-6.629 14.653-14.802M133.629 275.486V220.6a1.89 1.89 0 0 0-1.88-1.895h-22.651c-1.039 0-1.969 1.072-1.969 2.115v78.634c0 2.312 1.44 2.998 3.304 2.998h20.408c2.239 0 2.788-1.1 2.788-3.034v-23.932M386.71 218.884h-22.549c-1.034 0-1.876.852-1.876 1.901v58.302s-5.729 4.192-13.859 4.192c-8.13 0-10.287-3.689-10.287-11.65v-50.844c0-1.049-.841-1.901-1.875-1.901h-22.886c-1.032 0-1.879.852-1.879 1.901v54.693c0 23.646 13.179 29.431 31.31 29.431 14.873 0 26.864-8.216 26.864-8.216s.571 4.329.829 4.843c.259.512.932 1.029 1.659 1.029l14.56-.064c1.032 0 1.879-.854 1.879-1.898l-.008-79.817c0-1.05-.843-1.902-1.882-1.902M439.445 283.207c-7.821-.238-13.126-3.788-13.126-3.788v-37.653s5.233-3.208 11.654-3.782c8.12-.727 15.944 1.726 15.944 21.095.001 20.426-3.53 24.457-14.472 24.128zm8.894-66.993c-12.807 0-21.518 5.714-21.518 5.714v-40.263c0-1.05-.839-1.897-1.875-1.897h-22.787a1.887 1.887 0 0 0-1.878 1.897v118.903c0 1.048.842 1.901 1.881 1.901h15.811c.711 0 1.25-.367 1.648-1.009.393-.639.96-5.482.96-5.482s9.318 8.83 26.957 8.83c20.708 0 32.584-10.504 32.584-47.154 0-36.651-18.967-41.44-31.783-41.44M198.936 218.695h-17.045l-.026-22.519c0-.852-.439-1.278-1.424-1.278h-23.228c-.903 0-1.388.398-1.388 1.265v23.271s-11.64 2.809-12.427 3.037a1.886 1.886 0 0 0-1.361 1.812v14.623c0 1.052.84 1.898 1.879 1.898h11.909v35.178c0 26.13 18.328 28.697 30.696 28.697 5.651 0 12.411-1.814 13.527-2.228.675-.248 1.067-.947 1.067-1.705l.019-16.086c0-1.05-.886-1.897-1.884-1.897-.993 0-3.534.404-6.15.404-8.372 0-11.209-3.893-11.209-8.932l-.001-33.432h17.046c1.039 0 1.88-.847 1.88-1.898v-18.317a1.884 1.884 0 0 0-1.88-1.893" />
-                  </g>
-                </svg>.
-              </a>
-            </p>
+            <h3 class="main__title">Опыт работы</h3>
+            <ul class="education__list">
+              <li class="education__item">
+                <p>Frontend Developer (Выпускник)</p>
+                <p>IT School "TeachMeSkills"</p>
+                <p>(июнь 2022 - февраль 2023)</p>
+                <ul class="expirience__achievements">
+                  Навыки:
+                  <li>Опыт работы с адаптивной, кроссбраузерной вёрсткой: HTML, CSS, SCSS. Использую
+                    HTML-теги в
+                    соответствии с их семантикой, знаю принципы БЭМ.</li>
+                  <li>Работа с фреймворком Bootstrap.</li>
+                  <li>Уверенные навыки по JavaScript, браузерному окружению, умею работать с
+                    асинхронным кодом, Web
+                    Storage API и сетевыми запросами, есть понимание EventLoop и алгоритмов работы
+                    движка V8.</li>
+                  <li>ReactJS, Redux, redux-thunk, redux-saga, redux-toolkit, redux-persist,
+                    Component Lifecycle, React
+                    Router DOM, Hooks, HOC, ReactContext, React Portal, etc.</li>
+                  <li>Авторизация и аутентификация веб-приложений (Сессии и JWT).</li>
+                  <li>Статическая типизация с использованием TypeScript.</li>
+                  <li>Опыт работы с Git.</li>
+                  <li>Базовое знание Node.JS.</li>
+                  <li>Знание структур данных и понимание алгоритмов.</li>
+                  <li>Big O notation.</li>
+                </ul>
+                <ul class="expirience__achievements">
+                  Результаты:
+                  <p>Реализация проекта E-Shop BookStore.</p>
+                  <p>В ходе реализации проекта были проведены работы:</p>
+                  <li>Проектирование архитектуры и создание структуры проекта.</li>
+                  <li>Разработка дизайна приложения.</li>
+                  <li>Применение библиотек:
+                    <ul class="expirience__achievements__inner">
+                      <li>"react-dom" - использование порталов для Modals окон</li>
+                      <li>"react-icons" - отрисовка UI</li>
+                      <li>"react-redux" - хранение глобального state приложения</li>
+                      <li>"redux-saga" - работа с глобальным state</li>
+                      <li>"react-router-dom" - маршрутизация по приложению</li>
+                      <li>"react-slick" - использование Slick Slider</li>
+                      <li>"redux-persist" - оборачивание state в persistor для хранения данных в
+                        localstorage</li>
+                      <li>"sass" - применение формата scss, в проекте использованы variables</li>
+                      <li>"typescript" - типизация проекта</li>
+                      <li>"lodash.debounce" - использование debounce при поиске товаров</li>
+                      <li>"body-scroll-lock" - функция stop scroll при открытии Modal окна</li>
+                    </ul>
+                  </li>
+                  <li>Использование lazy loading при загрузке приложения</li>
+                  <li>Авторизация, аутентификация и регистрация с активацией</li>
+                  <li>Реализован поиск по товарам</li>
+                  <li>Пагинация</li>
+                  <li>Добавление в избранное</li>
+                  <li>Работа с корзиной</li>
+                  <li>Переход на отдельный товар с детальной информацией</li>
+                  <li>Личный кабинет пользователя</li>
+                  <li>Разработан функционал под изменение темы приложения (non styles)</li>
+                </ul>
+              </li>
+              <li class="education__item">
+                <p>Директор</p>
+                <p>ООО "АвтоМириад"</p>
+                <p>(январь 2019 - сентябрь 2021)</p>
+                <ul class="expirience__achievements">
+                  Опыт:
+                  <li>Управление персоналом компании.</li>
+                  <li>Взаимодействие с государственными органами контролирующими перевозку
+                    пассажиров.</li>
+                  <li>Централизованный подход к закупке комплектующих и расходных материалов,
+                    управление
+                    расходами.</li>
+                  <li>Привлечение, обучение и контроль личного состава за исполнением мотивации
+                    компании.
+                  </li>
+                  <li>Мониторинг бизнес-показателей с целью повышения эффективности использования
+                    транспорта
+                    компании.</li>
+                </ul>
+                <ul class="expirience__achievements">
+                  Достижения:
+                  <li>Увеличение автопарка, с момента открытия компании, более чем на 30
+                    транспортных
+                    средств.</li>
+                  <li>Создание эффективной организационной структуры, что отразилось на увеличении
+                    годовой
+                    прибыли в 200%.</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="main__courses">
+          <div class="section__wrapper">
+            <h3 class="main__title">Курсы</h3>
+            <ul class="education__list">
+              <li class="education__item">
+                <p>Frontend разработчик, IT Школа "TeachMeSkills"</p>
+                <p>(Июнь 2022 - Февраль 2023)<span>Минск</span></p>
+                <a href="https://drive.google.com/file/d/14LRFqyxGOKVBID9ftlPkVVX0-l-DUxpG/view?usp=share_link"
+                  target="_blank" rel="noopener noreferrer">Сертификат об успешном прохождении</a>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="main__education">
+          <div class="section__wrapper">
+            <h3 class="main__title">Образование</h3>
+            <ul class="education__list">
+              <li class="education__item">
+                <p>Экономист-менеджер (бакалавр), Международный университет МИТСО</p>
+                <p>октябрь 2014 - май 2019)<span>Минск</span></p>
+              </li>
+              <li class="education__item">
+                <p>Старший механик-водитель Т-72Б, Армия Республики Беларусь</p>
+                <p>(май 2012 - ноябрь 2013)<span>Бобруйск</span></p>
+              </li>
+            </ul>
           </div>
         </section>
         <section class="main__skills">
-          <h3 class="main__title">Skills</h3>
+          <h3 class="main__title">Hard Skills</h3>
           <ul class="skills__list">
             <li class="skills__item">HTML
               <svg enable-background="new 0 0 50 50" height="50px" id="Layer_1" version="1.0"
@@ -373,83 +477,54 @@
             </li>
           </ul>
         </section>
-        <section class="main__expirience">
-          <div class="section__wrapper">
-            <h3 class="main__title">Expirience</h3>
-            <ul class="education__list">
-              <li class="education__item">
-                <p>Chief Executive Officer (CEO), AutoMyriad LLC</p>
-                <p>(Jan, 2019 - Sep, 2021)</p>
-                <ul class="expirience__achievements">
-                  <li>Recruited more than 50 employees.</li>
-                  <li>Optimized company logistics.</li>
-                  <li>Increased the company's revenue by 300%.</li>
-                </ul>
-              </li>
-              <li class="education__item">
-                <p>Chief business development officer (CBDO), HybridGroup LLC</p>
-                <p>(Feb 2017 - Dec 2018)</p>
-                <ul class="expirience__achievements">
-                  <li>Lead and conducted in depth analysis of business performance versus business
-                    goals.</li>
-                  <li>Oversaw sales, marketing, and business development goals.</li>
-                  <li>Expanded the client base by more than 2000 people.</li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-        </section>
-        <section class="main__education">
-          <div class="section__wrapper">
-            <h3 class="main__title">Education</h3>
-            <ul class="education__list">
-              <li class="education__item">
-                <p>Economist-manager (Bachelor), International University MITSO</p>
-                <p>(Oct, 2014 - May, 2019)<span>Minsk</span></p>
-              </li>
-              <li class="education__item">
-                <p>Tankman, Army of the Republic of Belarus</p>
-                <p>(May, 2012 - Nov, 2013)<span>Bobruisk</span></p>
-              </li>
-            </ul>
-          </div>
-        </section>
-        <section class="main__courses">
-          <div class="section__wrapper">
-            <h3 class="main__title">Courses</h3>
-            <ul class="education__list">
-              <li class="education__item">
-                <p>Frontend Developer, IT School "TeachMeSkills"</p>
-                <p>(Jun, 2022 - Feb, 2023)<span>Minsk</span></p>
-              </li>
-            </ul>
-          </div>
-        </section>
         <section class="main__language">
           <div class="section__wrapper">
-            <h3 class="main__title">Language</h3>
+            <h3 class="main__title">Знание языков</h3>
             <ul class="education__list">
               <li class="education__item">
                 <p>English</p>
                 <p>B1</p>
               </li>
               <li class="education__item">
-                <p>Russian</p>
+                <p>Русский</p>
                 <p>C2</p>
               </li>
             </ul>
           </div>
         </section>
+        <section class="main__profile">
+          <div class="section__wrapper">
+            <h3 class="main__title">Личная информация</h3>
+            <p>Много практикующий фронтенд разработчик, с хорошей базой знаний. Буду полезен
+              компании, в которой ценятся разработчики, как целые еденицы. Умею самостоятельно
+              решать сложные задачи, хорошо разбираюсь в чужом коде.
+            </p>
+            <p>Так же написал такие проекты как лендинги, калькулятор подсчёта чаевых для кафе и
+              ресторанов, онлайн-магазин для пиццерии, книжный онлайн-магазин, новостной блог,
+              мини-игру.</p>
+            <p>Ознакомиться с проектами можете по ссылке на мой аккаунт &#8594
+              <a href="https://github.com/Denekimoff">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="13"
+                  viewBox="-0.122 175.062 480.244 129.875">
+                  <g fill="#121110">
+                    <path
+                      d="M92.375 230.65H52.019a1.887 1.887 0 0 0-1.886 1.886v19.731a1.89 1.89 0 0 0 1.886 1.889h15.743v24.513s-3.535 1.206-13.308 1.206c-11.53 0-27.637-4.214-27.637-39.632 0-35.425 16.772-40.087 32.518-40.087 13.63 0 19.502 2.401 23.238 3.556 1.174.36 2.26-.808 2.26-1.851l4.502-19.063c0-.487-.165-1.075-.721-1.474-1.517-1.082-10.774-6.262-34.16-6.262-26.941 0-54.576 11.463-54.576 66.562 0 55.103 31.64 63.313 58.302 63.313 22.076 0 35.468-9.434 35.468-9.434.552-.306.612-1.077.612-1.431v-61.537c0-1.04-.844-1.885-1.885-1.885M300.354 181.664a1.88 1.88 0 0 0-1.873-1.896h-22.724a1.889 1.889 0 0 0-1.882 1.896l.006 43.913h-35.419v-43.913a1.882 1.882 0 0 0-1.875-1.896h-22.722a1.887 1.887 0 0 0-1.877 1.896v118.904c0 1.048.843 1.901 1.877 1.901h22.722c1.039 0 1.875-.854 1.875-1.901v-50.86h35.419l-.062 50.86c0 1.048.844 1.901 1.883 1.901h22.777c1.041 0 1.873-.854 1.875-1.901V181.664M135.254 197.268c0-8.183-6.56-14.795-14.653-14.795-8.085 0-14.65 6.612-14.65 14.795 0 8.173 6.565 14.802 14.65 14.802 8.093 0 14.653-6.629 14.653-14.802M133.629 275.486V220.6a1.89 1.89 0 0 0-1.88-1.895h-22.651c-1.039 0-1.969 1.072-1.969 2.115v78.634c0 2.312 1.44 2.998 3.304 2.998h20.408c2.239 0 2.788-1.1 2.788-3.034v-23.932M386.71 218.884h-22.549c-1.034 0-1.876.852-1.876 1.901v58.302s-5.729 4.192-13.859 4.192c-8.13 0-10.287-3.689-10.287-11.65v-50.844c0-1.049-.841-1.901-1.875-1.901h-22.886c-1.032 0-1.879.852-1.879 1.901v54.693c0 23.646 13.179 29.431 31.31 29.431 14.873 0 26.864-8.216 26.864-8.216s.571 4.329.829 4.843c.259.512.932 1.029 1.659 1.029l14.56-.064c1.032 0 1.879-.854 1.879-1.898l-.008-79.817c0-1.05-.843-1.902-1.882-1.902M439.445 283.207c-7.821-.238-13.126-3.788-13.126-3.788v-37.653s5.233-3.208 11.654-3.782c8.12-.727 15.944 1.726 15.944 21.095.001 20.426-3.53 24.457-14.472 24.128zm8.894-66.993c-12.807 0-21.518 5.714-21.518 5.714v-40.263c0-1.05-.839-1.897-1.875-1.897h-22.787a1.887 1.887 0 0 0-1.878 1.897v118.903c0 1.048.842 1.901 1.881 1.901h15.811c.711 0 1.25-.367 1.648-1.009.393-.639.96-5.482.96-5.482s9.318 8.83 26.957 8.83c20.708 0 32.584-10.504 32.584-47.154 0-36.651-18.967-41.44-31.783-41.44M198.936 218.695h-17.045l-.026-22.519c0-.852-.439-1.278-1.424-1.278h-23.228c-.903 0-1.388.398-1.388 1.265v23.271s-11.64 2.809-12.427 3.037a1.886 1.886 0 0 0-1.361 1.812v14.623c0 1.052.84 1.898 1.879 1.898h11.909v35.178c0 26.13 18.328 28.697 30.696 28.697 5.651 0 12.411-1.814 13.527-2.228.675-.248 1.067-.947 1.067-1.705l.019-16.086c0-1.05-.886-1.897-1.884-1.897-.993 0-3.534.404-6.15.404-8.372 0-11.209-3.893-11.209-8.932l-.001-33.432h17.046c1.039 0 1.88-.847 1.88-1.898v-18.317a1.884 1.884 0 0 0-1.88-1.893" />
+                  </g>
+                </svg>.
+              </a>
+            </p>
+          </div>
+        </section>
         <section class="main__hobbies">
           <div class="section__wrapper">
-            <h3 class="main__title">Hobbies</h3>
-            <p>Big fan of cars, attracts snowboarding, breathtaking trips to the mountains, blues
-              and rock'n'roll music.
+            <h3 class="main__title">Хобби</h3>
+            <p>Большой фанат автомобилей, привлекает сноуборд, захватывают поезки в горы, обожаю
+              музыку блюз и рок'н'ролл.
             </p>
           </div>
         </section>
         <section class="main__links">
-          <h3 class="main__title">Links</h3>
+          <h3 class="main__title">QR-коды на соц.сети</h3>
           <div class="main__slider swiper">
             <div class="main__slider__wrapper swiper-wrapper">
               <!-- Slides -->

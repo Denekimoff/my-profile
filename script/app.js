@@ -14,15 +14,15 @@ const languageSectionElement = document.querySelector('.main__language')
 const hobbiesSectionElement = document.querySelector('.main__hobbies')
 
 const linksObject = {
-  Main: aboutSectionElement,
-  Profile: profileSectionElement,
-  Skills: skillsSectionElement,
-  Expirience: expirienceSectionElement,
-  Education: educationSectionElement,
-  Courses: coursesSectionElement,
-  Language: languageSectionElement,
-  Hobbies: hobbiesSectionElement,
-  Links: linksSectionElement,
+  "Главная": aboutSectionElement,
+  "Опыт работы": expirienceSectionElement,
+  "Курсы": coursesSectionElement,
+  "Образование": educationSectionElement,
+  "Hard Skills": skillsSectionElement,
+  "Языки": languageSectionElement,
+  "О себе": profileSectionElement,
+  "Хобби": hobbiesSectionElement,
+  "QR-коды": linksSectionElement,
 }
 
 const handleClickBurger = () => {
@@ -40,6 +40,8 @@ const handleClickOnMenuLinks = event => {
     menuElement.classList.toggle('header__menu--visible')
 
     if (linksObject[prop]?.tagName == 'SECTION') {
+      linksObject[prop] === expirienceSectionElement ?
+      linksObject[prop].scrollIntoView({ block: 'start', behavior: 'smooth' }) :
       linksObject[prop].scrollIntoView({ block: 'center', behavior: 'smooth' })
     }
   } else return
